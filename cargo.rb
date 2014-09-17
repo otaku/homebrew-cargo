@@ -16,9 +16,7 @@ class Cargo < Formula
 
   def install
     args = ["--prefix=#{prefix}"]
-    system "./configure", *args
-    system "make"
-    system "make install"
+    system "./install.sh", *args
   end
 
   test do
